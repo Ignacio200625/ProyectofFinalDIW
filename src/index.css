@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+@theme {
+  /*Light*/
+  --color-primario-light: #f8fafc;
+  --color-secundario-light: #ffffff;
+  --color-acento-light: #6366f1;
+  --color-neutro-fondo-light: #f1f5f9;
+  --color-neutro-text: #0f172a;
+  --color-neutro-text-secundary-light: #475569;
+
+  /*Dark*/
+  --color-primario-dark: #0f172a;
+  --color-secundario-dark: #1e293b;
+  --color-acento-dark: #6366f1;
+  --color-neutro-fondo-dark: #ffffff;
+  --color-neutro-dark: #f8fafc;
+  --color-neutro-text-secundary-dark: #1e293b;
+}
+
+/* Font */
+:root {
+  /* Mode 1 */
+  /* number */
+  --font-size-small: 0.875rem;
+  --font-size-body: 1rem;
+  /*(titulos-tarjetas-de-servicio)*/
+  --font-size-h3: 1.25rem;
+  /*(titulos-de-seccion)*/
+  --font-size-h2: 2rem;
+  /*(titulo-del-hero)*/
+  --font-size-h1: 3rem;
+  /* string */
+  --font-family-body-small: "Inter";
+
+}
+/*  Spacing/radius */
+:root {
+  /* Default */
+  /* number */
+  --radius-none: 0rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 62.4375rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 5rem;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body {
+  @apply bg-primario-light dark:bg-black transition duration-300;
+}
+
