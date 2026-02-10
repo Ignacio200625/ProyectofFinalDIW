@@ -1,9 +1,9 @@
 interface ButtonProps {
   text: string;
-  variant?: "primary" | "secondary"; // Solo estas dos variantes
+  variant?: "primary" | "secondary" | "terciary"; // Solo estas dos variantes
 }
 
-const variants: Record<"primary" | "secondary", string> = {
+const variants: Record<"primary" | "secondary" | "terciary" , string> = {
   primary: `
     text-white
     bg-[#6366f1]
@@ -18,18 +18,22 @@ const variants: Record<"primary" | "secondary", string> = {
     border-gray-300
     hover:bg-gray-100
   `,
+  terciary: `cursor-pointer 
+  text-white 
+  border border-white 
+  px-6 py-3 rounded-full 
+  hover:bg-white 
+  hover:text-acento-dark 
+  transition-all 
+  duration-300 
+  font-semibold`,
 };
 
 export function Button({ text, variant = "primary" }: ButtonProps) {
   const base =
     "px-6 py-3 rounded-lg font-semibold transition-all duration-300 cursor-pointer";
 
-  return (
-    <button className={`${base}  ${variants[variant]}`}>
-      {text}
-    </button>
-  );
+  return <button className={`${base}  ${variants[variant]}`}>{text}</button>;
 }
-
 
 export default Button;

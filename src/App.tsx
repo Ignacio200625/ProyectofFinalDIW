@@ -7,7 +7,7 @@ function App() {
    
       <BrowserRouter>
         <Header />
-         <div className="px-20 py-5 mt-20">
+         <div className="pt-20">
           <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

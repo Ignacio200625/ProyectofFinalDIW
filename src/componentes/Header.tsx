@@ -24,7 +24,7 @@ function Header() {
         : "bg-white dark:bg-black shadow-lg"}
       border-b border-gray-200 dark:border-gray-700`}
     >
-      <nav className="max-w-7xl mx-auto px-6 py-4">
+      <nav className="max-w-7xl mx-auto py-4">
         <div className="flex items-center justify-between">
 
           <div className="flex items-center gap-3">

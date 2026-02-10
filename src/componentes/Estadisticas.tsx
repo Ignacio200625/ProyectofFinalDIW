@@ -5,7 +5,7 @@ function Estadisticas() {
                     shadow-lg dark:shadow-[0_10px_30px_rgba(99,102,241,0.5)]
                     gap-6 md:gap-0">
       
-      {/* Plataforma */}
+
       <div className="text-center w-full md:w-1/4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black dark:text-[#6366f1] md:leading-tight">
           10K
@@ -15,7 +15,7 @@ function Estadisticas() {
         </p>
       </div>
 
-      {/* Uptime */}
+
       <div className="text-center w-full md:w-1/4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black dark:text-[#6366f1] md:leading-tight">
           99.9
@@ -25,7 +25,7 @@ function Estadisticas() {
         </p>
       </div>
 
-      {/* Soporte */}
+
       <div className="text-center w-full md:w-1/4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black dark:text-[#6366f1] md:leading-tight">
           24/7
@@ -35,7 +35,7 @@ function Estadisticas() {
         </p>
       </div>
 
-      {/* Paises */}
+
       <div className="text-center w-full md:w-1/4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black dark:text-[#6366f1] md:leading-tight">
           +150
