@@ -49,9 +49,9 @@ function Header() {
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
            {user ? <UserButton/> :  <span onClick={()=> openSignIn()} className="cursor-pointer dark:text-white">
-                Iniciar Sesión
+                 <Button text="Iniciar Sesion" variant="primary" />
               </span> }
-            <Button text="Registrarme" variant="primary" />
+           
           </div>
 
    
@@ -74,11 +74,11 @@ function Header() {
             <div className="flex justify-center items-center gap-4 pt-4 border-t dark:border-gray-700">
               <ThemeToggle />
              {user ? <UserButton/> :  <span onClick={()=> openSignIn()} className="cursor-pointer dark:text-white">
-                Iniciar Sesión
+                 <Button text="Iniciar Sesion" variant="primary" />
               </span> }
             </div>
 
-            <Button text="Registrarme" variant="primary" />
+           
           </div>
         )}
       </nav>
