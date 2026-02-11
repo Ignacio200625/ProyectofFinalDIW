@@ -2,14 +2,16 @@ import Header from "./componentes/Header";
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./pages/Home";
 
+
 function App() {
   return (
+    
    
       <BrowserRouter>
         <Header />
          <div className="pt-20">
           <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}  />
         </Routes>
          </div>
         

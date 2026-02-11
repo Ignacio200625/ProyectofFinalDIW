@@ -3,10 +3,13 @@ import ThemeToggle from "./ThemeToggle";
 import { Link } from "react-router";
 import Button from "./Button";
 import { useState, useEffect } from "react";
+import {UserButton,useUser, useClerk} from "@clerk/clerk-react"
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const {openSignIn}=useClerk();
+  const {user}=useUser();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,9 +48,9 @@ function Header() {
      
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
-            <span className="cursor-pointer hover:text-acento-light dark:text-white">
-              Iniciar Sesión
-            </span>
+           {user ? <UserButton/> :  <span onClick={()=> openSignIn()} className="cursor-pointer dark:text-white">
+                Iniciar Sesión
+              </span> }
             <Button text="Registrarme" variant="primary" />
           </div>
 
@@ -70,9 +73,9 @@ function Header() {
 
             <div className="flex justify-center items-center gap-4 pt-4 border-t dark:border-gray-700">
               <ThemeToggle />
-              <span className="cursor-pointer dark:text-white">
+             {user ? <UserButton/> :  <span onClick={()=> openSignIn()} className="cursor-pointer dark:text-white">
                 Iniciar Sesión
-              </span>
+              </span> }
             </div>
 
             <Button text="Registrarme" variant="primary" />
