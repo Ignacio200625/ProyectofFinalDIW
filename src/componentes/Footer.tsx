@@ -17,7 +17,7 @@ function Footer() {
         <p className="text-gray-200 dark:text-gray-400 text-base mt-1">
          Precios
         </p>
-        <p className="text-gray-200 dark:text-gray-400 text-base mt-1">
+        <p className="text-gray-200 text-nowrap dark:text-gray-400 text-base mt-1">
          Casos de uso
         </p>
       </div>
@@ -25,7 +25,7 @@ function Footer() {
         <p className="text-white  dark:text-gray-400 font-bold text-base mt-1">
          Empresa
         </p>
-        <p className="text-gray-200 dark:text-gray-400 text-base mt-1">
+        <p className="text-gray-200 text-nowrap dark:text-gray-400 text-base mt-1">
          Sobre Nosotros
         </p>
         <p className="text-gray-200 dark:text-gray-400 text-base mt-1">
